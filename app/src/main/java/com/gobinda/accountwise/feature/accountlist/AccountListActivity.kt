@@ -1,4 +1,4 @@
-package com.gobinda.accountwise
+package com.gobinda.accountwise.feature.accountlist
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -12,7 +12,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.gobinda.accountwise.ui.theme.AccountWiseTheme
 
-class MainActivity : ComponentActivity() {
+/**
+ * This activity will be used to show account list.
+ */
+class AccountListActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
@@ -22,7 +25,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
-                    Greeting("Android")
+                    Greeting("Main Activity real")
                 }
             }
         }
@@ -41,6 +44,6 @@ fun Greeting(name: String, modifier: Modifier = Modifier) {
 @Composable
 fun GreetingPreview() {
     AccountWiseTheme {
-        Greeting("Android")
+        Greeting("Main Activity")
     }
 }

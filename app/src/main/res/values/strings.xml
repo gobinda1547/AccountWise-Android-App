@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AccountWise</string>
+    <string name="activity_title_account_list">Account list</string>
 </resources>

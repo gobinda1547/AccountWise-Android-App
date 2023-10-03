@@ -12,10 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AccountWise"
         tools:targetApi="31">
+
         <activity
-            android:name=".MainActivity"
+            android:name=".feature.accountlist.AccountListActivity"
             android:exported="true"
-            android:label="@string/app_name"
+            android:label="@string/activity_title_account_list"
             android:theme="@style/Theme.AccountWise">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,6 +24,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".feature.loading.LoadingActivity" />
+        <activity android:name=".feature.singleaccount.SingleAccountActivity" />
+        <activity android:name=".feature.transaction.SingleTransactionActivity" />
+
     </application>
 
 </manifest>
